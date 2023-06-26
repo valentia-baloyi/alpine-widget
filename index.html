@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>UrbanLOcker</title>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+
+    <style>
+        .contracts{
+            background-color:black ;
+            color: violet;
+            padding: 2em;
+            width:auto
+        }
+
+        .services {
+            background-color: rgb(7, 4, 2);
+            color: rgb(228, 135, 73);
+            padding: 1em;
+            width: auto;
+        }
+
+        .rentals {
+            background-color: darkslategray;
+            color: lightgreen;
+            padding: 1em;
+            width: auto;
+        }
+
+        .sales {
+            background-color: red;
+            color: black;
+            padding: 2em;
+            width: auto;
+        }
+
+        .slogan {
+            background-color: rgb(10, 36, 36);
+            color: rgb(126, 168, 236);
+            padding: 1em;
+            width: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+<div style="text-align: center;">    
+    <div class="row">
+        <div class="col s6 l6" x-data="{ count: 1 }">
+            <p x-text="count"></p>
+            <button @click="count++">Count Up</button>
+            <button @click="{ if(count>0) count--}">Count Down</button>
+        </div>
+        
+    </div> 
+</div>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
